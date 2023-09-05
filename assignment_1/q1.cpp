@@ -8,7 +8,7 @@ int main() {
     int a; 
     cout << "enter a number" << endl; 
     cin >> a; 
-    cout << "output: " << a * a; 
+    cout << a * a; 
 
     return 0; 
 
