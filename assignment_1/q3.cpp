@@ -4,17 +4,22 @@ using namespace std;
 
 int main() {
 
-const int acc = 32; 
-int t; 
-int distance; 
+int maxOccupancy; int currentOccupancy; int peopleOverCap;
 
-cout << "Enter a time in seconds: "<< endl; 
+cout << "Enter the Maximum occupancy for the room." << endl;
+cin  >> maxOccupancy;
+cout << maxOccupancy << endl << "Enter the number of occupants of the room." << endl;
+cin >> currentOccupancy;
+cout << currentOccupancy << endl;
 
-cin>> t; 
+peopleOverCap = (currentOccupancy - maxOccupancy);
 
-distance = (acc/2) * (t*t);
+if (peopleOverCap <= 0)
+cout << "The number of occupants does not exceed the legal maximum.";
+else
+cout << "ATTENTION: MAXIMUM OCCUPANCY EXCEEDED. THE LAW REQUIRES " << peopleOverCap << " PERSONS TO LEAVE THE ROOM IMMEDIATELY";
 
-cout<< ""<< t << "will fall in" << distance << "feet"; 
+
 
 return 0; 
 }
