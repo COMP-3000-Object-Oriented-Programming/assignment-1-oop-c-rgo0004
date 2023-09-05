@@ -4,10 +4,14 @@ using namespace std;
 
 int main(){
 
-    int first = 5; 
-    double second = 7; 
+    int first; 
+    cin >> first; 
+    double dub;
+    dub = 2 * first;
+    double square;
+    square = first * first;
+    cout << first << " " << dub << " " << square;
 
-    cout << "first is: " << first << " " << "second is: " << second << endl ; 
 
     return 0; 
 }
